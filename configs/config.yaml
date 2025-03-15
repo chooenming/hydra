@@ -1,0 +1,7 @@
+defaults:
+  - experiment: experiment-with-resnet18
+  - config-to-merge
+  - _self_
+
+experiment:
+  optimizer: SGD

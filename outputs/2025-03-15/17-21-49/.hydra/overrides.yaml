@@ -1,0 +1,2 @@
+- +experiment=experiment-with-resnet18
+- experiment.learning_rate=3e-4
