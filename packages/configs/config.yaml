@@ -1,0 +1,9 @@
+defaults:
+  - task: mnist_classification
+
+  # - task@overriden_package_name: mnist_classification
+  - task@some_other_task: mnist_classification
+  - task@yet_another_task: mnist_classification
+
+  # - /task/model_simple_model@overriden_package_name
+  - /task/model/simple_model@my_simple_model

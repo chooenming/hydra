@@ -1,0 +1,3 @@
+# @package foo.bar
+
+_target_: some_file.ResNet18

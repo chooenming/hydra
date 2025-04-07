@@ -21,4 +21,12 @@ Refer to the code main7.py
 For grouping config files (in a directory), refer to the code main8.py and configs directory
 To select default config: insert values to ./configs/config.yaml
 Need to use keyword `override` if want to override the configs in config.yaml
+If `_self_` in config.yaml is put before experiment, the config in the sub config files would overwrite the config in the config.yaml later
+If `_self_` in config.yaml is put after experiment, then config in the config.yaml will overwrite the config in sub config files
+Merge config files by adding the config-to-merge.yaml into the defaults
 
+main9.py shows the way of using CLi to sweep over all combinations of the experiments (permutation of all experiments)
+
+Hydra automatically creates output and working directory to store the log
+main10.py shows some specific features to working with output and working directory of Hydra, as well as logging information
+main11.py shows how to log information

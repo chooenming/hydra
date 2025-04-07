@@ -1,0 +1,38 @@
+foo:
+  bar:
+    _target_: some_file.ResNet18
+task:
+  model:
+    adapter:
+      _target_: some_file.LinearAdapter
+      in_features: 512
+      out_features: 10
+    head:
+      _target_: some_file.IdentityHead
+    some_pther_model_var: 3
+some_other_task:
+  model:
+    adapter:
+      _target_: some_file.LinearAdapter
+      in_features: 512
+      out_features: 10
+    head:
+      _target_: some_file.IdentityHead
+    some_pther_model_var: 3
+yet_another_task:
+  model:
+    adapter:
+      _target_: some_file.LinearAdapter
+      in_features: 512
+      out_features: 10
+    head:
+      _target_: some_file.IdentityHead
+    some_pther_model_var: 3
+my_simple_model:
+  adapter:
+    _target_: some_file.LinearAdapter
+    in_features: 512
+    out_features: 10
+  head:
+    _target_: some_file.IdentityHead
+  some_pther_model_var: 3
